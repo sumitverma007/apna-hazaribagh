@@ -1,7 +1,0 @@
-let baseUrl  = ''
-
-
-
-export {
-    baseUrl
-}
