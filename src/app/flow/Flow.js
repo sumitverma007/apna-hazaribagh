@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Routes from '../routes/Routes';
-
+import './_shared.scss'
 export class Flow extends Component {
     componentDidMount(){
         if(!window.location.href.includes('/login')){
@@ -9,7 +9,6 @@ export class Flow extends Component {
     }
   render() {
     let { userDetails } = this.props ;
-    console.log(userDetails)
     return (
       <div className='routesContainer'>
         {userDetails && userDetails.isLoggedIn == false && <div className='unauthorized'>Not authorizesd</div> }

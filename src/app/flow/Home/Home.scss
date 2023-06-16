@@ -1,0 +1,58 @@
+.home-container{
+    padding: 50px 20px;
+    .section-title{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(43, 45, 66, 0.5);
+    }
+    .news-card{
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid rgba(43, 45, 66, 0.1);
+        .published-at{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .main-content{
+            display: flex;
+            align-items: center;
+            .title-section{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                color: #2B2D42;
+                width: 70vw;
+                margin-bottom: 10px;
+                .cat-div{
+                    margin-top: 20px;
+                }
+                .category{
+                    // display: block;
+                    background: #F3F3F7;
+                    border-radius: 20px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 15px;
+                    /* identical to box height */
+                    padding: 4px 15px;
+                    text-transform: uppercase;
+
+                    /* Dark */
+                    color: #2B2D42;
+
+                }
+            }
+            .img-section{
+                img{
+                    position: relative;
+                    top: -17px;
+                    height: 11vh;
+                    width: 22vw;
+                }
+            }
+        }
+    }
+}

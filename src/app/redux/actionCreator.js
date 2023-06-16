@@ -27,7 +27,7 @@ export const validateToken = (callbackFn) => {
             callbackFn && callbackFn(resp.data)
         })
         .catch(err => {
-            console.log(err)
+            // console.log(err)
         })
     }
 }

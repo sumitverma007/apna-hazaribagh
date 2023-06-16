@@ -1,0 +1,26 @@
+.input-box-border{
+    background: #F0F0F5;
+    border: 1px solid rgba(43, 45, 66, 0.1);
+    border-radius: 4px;
+    padding: 3px 10px;
+    display: flex;
+    height : 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    .icon-box{
+        margin-right: 10px;
+    }
+    .input-box{
+        width: 100%;
+        input{
+        text-decoration: none;
+        border: none;
+        width: 99%;
+        height: 40px;
+        background: #F0F0F5;
+        color : rgba(43, 45, 66, 0.5);
+    }
+    }
+    
+}

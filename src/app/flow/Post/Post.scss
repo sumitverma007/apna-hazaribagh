@@ -1,0 +1,77 @@
+.post-details-container{
+    .news-description{
+        background: #2B2D42;
+        padding: 20px;
+        .news-category{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            /* identical to box height */
+            
+            text-transform: uppercase;
+            
+            color: #FFFFFF; 
+        }
+        .news-title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 39px;
+            /* or 162% */
+            color: #FFFFFF;
+        }
+
+    }
+    .author-details{
+        display: flex;
+        align-items: center;
+        .author-pic{
+            border-radius: 50px;
+            border:2px solid white;
+            height: 41px;
+            width: 42px;
+        }
+        .author-name{
+            color: #fff;
+            margin-left: 10px;
+            .author-name-headline{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color : #fff;
+                margin: 0px;
+                 
+            }
+            .publish-desc{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 15px;
+                color: rgba(255, 255, 255, 0.45);
+                margin: 0;
+            }
+        }
+    }
+    .post-details{
+        .post-details-img{
+            max-height: 44vh;
+            width: 100vw;
+        }
+        .post-content{
+            padding: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 32px;
+            /* or 200% */
+
+            letter-spacing: 0.15px;
+
+            /* Dark */
+
+            color: #2B2D42;
+        }
+    }
+}

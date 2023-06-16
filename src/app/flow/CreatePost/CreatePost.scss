@@ -1,0 +1,55 @@
+.create-post-container{
+    padding: 20px 10px;
+    .drawer-container{
+        background: #fff;
+        height: 100vh;
+        position: fixed;
+        top: 2px;
+        width: 100vw;
+        .cross-Drawer{
+            position: fixed;
+            top: 13px;
+            right: 25px;
+            font-size: 24px;
+        }
+        .news-content-container{
+            margin-top: 40px;
+            .news-container{
+               & > div{
+                    margin: 10px 2px;
+                }
+                input{
+                    width: 90vw;
+                    height: 40px;
+                    margin-top: 5px;
+                }
+                .news-desc{
+                    width: 95vw;
+                }
+            }
+        }
+    }
+    .create-post{
+        align-items: center;
+        text-align: center;
+        &-btn{
+            width: 100%;
+            background: #3A86FF;
+            border-radius: 4px;
+            padding: 9px 10px;
+            border: none;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.15px;
+            text-transform: uppercase;
+
+            /* White */
+
+            color: #FFFFFF;
+        }
+      
+    }
+}
