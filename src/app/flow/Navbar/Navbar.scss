@@ -1,0 +1,17 @@
+.navbar-container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgb(236,236,246);
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+        .nabarObj{
+            img{
+                height: 3vh;
+                width: 5vw;
+            }
+        }
+    }
+}

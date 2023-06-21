@@ -1,0 +1,45 @@
+#login-container{
+    padding: 95px 20px;
+    .login-header{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 39px;
+        color: #2B2D42;
+    }
+    .login-title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.25px;
+        color: rgba(43, 45, 66, 0.5);
+
+    }
+    .submit-inp-form{
+        margin-top: 147px;
+    }
+    .forget-password{
+        display: block;
+        float: right;
+        color: #786DEF;
+    }
+    .submit{
+        height: 54px;
+        width: 100%;
+        font-style: normal;
+        color: #FFFFFF;
+        background: #3A86FF;
+        font-size: 24px;
+        border-radius: 5px;
+        border: none;
+    }
+    .new-user{
+        margin-top: 10px;
+
+        color: rgba(43, 45, 66, 0.5);
+        .create{
+            color : #786DEF;
+        }
+    }
+}
