@@ -1,6 +1,9 @@
 import React , {useState} from 'react'
 import './CreatePost.scss'
 import TextEditor from './TextEditor'
+// import ImageUploader from 'react-images-upload'
+import ImageUploading from 'react-images-uploading';
+import { UploadImg } from './UploadImg';
 function CreatePost() {
     let defaultNewsContent = {
         'id' : null,
@@ -14,6 +17,10 @@ function CreatePost() {
         console.log(key , content)
         let newContent = {...newsContent,[key] : content} ;
         setNewsContent(newContent)
+    }
+
+    const onDrop = (pictureFiles , pictureDatUrl) => {
+        console.log(pictureFiles , pictureDatUrl)
     }
 
     const renderNews = () => {
@@ -32,7 +39,15 @@ function CreatePost() {
 
                 <div className= "upload-img-container">
                     <div className='img-container'>Upload Img</div>
-                    Upload img logic
+                    {/* <ImageUploader
+                    withIcon={true}
+                    buttonText='Choose images'
+                    onChange={() => onDrop()}
+                    imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                    maxFileSize={5242880}
+                    singleImage = {true}
+                    /> */}
+                    <UploadImg />
                 </div>
 
                 <div className='news-desc'>
@@ -41,7 +56,6 @@ function CreatePost() {
                         initialValue = {newsContent?.description}
                         onBlur = {(key , content) => onFieldBlur(key , content)}
                     />
-                    <p>So</p>
                 </div>
 
             </div>

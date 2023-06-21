@@ -6,6 +6,8 @@
         position: fixed;
         top: 2px;
         width: 100vw;
+        overflow-y: scroll;
+        padding-bottom: 60px;
         .cross-Drawer{
             position: fixed;
             top: 13px;
@@ -14,6 +16,7 @@
         }
         .news-content-container{
             margin-top: 40px;
+            margin-bottom: 80px;
             .news-container{
                & > div{
                     margin: 10px 2px;
