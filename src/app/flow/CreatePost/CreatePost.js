@@ -4,6 +4,7 @@ import TextEditor from './TextEditor'
 // import ImageUploader from 'react-images-upload'
 import ImageUploading from 'react-images-uploading';
 import { UploadImg } from './UploadImg';
+import { Twitter } from 'react-social-sharing/dist-modules';
 function CreatePost() {
     let defaultNewsContent = {
         'id' : null,
@@ -67,6 +68,9 @@ function CreatePost() {
         <div className='create-post'>
             <button className='create-post-btn' onClick = {() => setOpenDrawer(true)}>Create New News</button>
         </div>
+        <Twitter
+        link="https://github.com"
+        />
         {openDrawer && 
         <div className='drawer-container'>
            <div className='cross-Drawer' onClick={() => setOpenDrawer(false)}>X</div>
