@@ -15,7 +15,8 @@ export const getHomePost = (callbackFn) => {
     return dispatch => {
         return axios.get(url , config)
         .then(resp => {
-            callbackFn && callbackFn(resp)
+            // callbackFn && callbackFn(resp)
+            callbackFn && callbackFn(homeResponse)
         },
         err => {
             callbackFn && callbackFn(homeResponse)

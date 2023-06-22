@@ -15,7 +15,8 @@ export const getPost = (slug,callbackFn) => {
     return dispatch => {
         return axios.get(url , config)
         .then(resp => {
-            callbackFn && callbackFn(resp)
+            // callbackFn && callbackFn(resp)
+            callbackFn && callbackFn(dummyPostRespone)
         },
         err => {
             callbackFn && callbackFn(dummyPostRespone)
